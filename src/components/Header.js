@@ -1,3 +1,4 @@
+
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -76,13 +77,13 @@ const Header = () => {
           >
             {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
-          <img
+          {/* <img
             className="hidden md:block w-12 h-12"
             alt="usericon"
             src={user?.photoURL}
-          />
+          /> */}
           <button onClick={handleSignOut} className="font-bold text-white ">
-            (Sign Out)
+            Sign Out
           </button>
         </div>
       )}
